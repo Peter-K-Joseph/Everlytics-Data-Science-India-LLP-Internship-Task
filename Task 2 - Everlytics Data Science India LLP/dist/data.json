@@ -1,0 +1,43 @@
+[{
+    "machine_name": "Auto Winding Machine",
+    "machine_id": "machine001",
+    "current": 0,
+    "voltage": 0,
+    "power_factor": 0,
+    "power": {
+        "active_": 0.0,
+        "apparent": 0.0,
+        "reactive": 0.0
+    },
+    "energy": {
+        "daily": 0,
+        "monthly": 0,
+        "yearly": 0
+    },
+    "idle": {
+        "daily": 0,
+        "monthly": 0,
+        "yearly": 0
+    }
+},{
+    "machine_name": "Boiler Machine",
+    "machine_id": "machine004",
+    "current": 0,
+    "voltage": 0,
+    "power_factor": 0,
+    "power": {
+        "active": 0.0,
+        "apparent": 0.0,
+        "reactive": 0.0
+    },
+    "energy": {
+        "daily": 0,
+        "monthly": 0,
+        "yearly": 0
+    },
+    "idle": {
+        "daily": 0,
+        "monthly": 0,
+        "yearly": 0
+    }
+}]

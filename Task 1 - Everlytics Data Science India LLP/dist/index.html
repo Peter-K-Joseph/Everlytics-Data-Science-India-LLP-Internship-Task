@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/dropdown.css">
+    <link rel="stylesheet" href="./css/transition.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="info">
+            <div class="parent">
+                <div>
+                    <img src="http://www.everlytics.io/assets/images/_smarty/logo_everlytics_dark.png" alt="everlytics"
+                    srcset="">
+                    <h2 class="is-size-2">Form Validation</h2>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="is-size-1">Enter the below information</h1>
+            <div class="form">
+                <div class="field">
+                    <label class="label">Source</label>
+                    <div class="ui fluid search selection dropdown">
+                        <input type="text" id="source" name="source">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Select Source</div>
+                        <div class="menu">
+                            <div class="item dropdownselection" data-value="GC">Google Cloud Console</div>
+                            <div class="item dropdownselection" data-value="AWS">Amazon AWS</div>
+                            <div class="item dropdownselection" data-value="Azure">Microsoft Azure</div>
+                        </div>
+                    </div>
+                    <p class="help is-link" id="source_error"></p>
+                </div>
+                <div class="field">
+                    <label class="label">Pipeline Name</label>
+                    <div class="field">
+                        <input type="text" id="pipeline" class="input " placeholder="Enter Pipeline Name">
+                        <p class="help is-link" id="pipeline_error"></p>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label class="label" id="project_name">Project Name</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input type="text" id="project" class="input" placeholder="Enter Project Name">
+                                <p class="help is-link" id="project_error"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" id="bucket_name">Bucket Name</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input type="text" id="bucket" class="input" placeholder="Enter Bucket Name">
+                                <p class="help is-link" id="bucket_error"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Input Cloud Storage File(s)</label>
+                    <div class="field">
+                        <input type="text" class="input" id="storage_files" placeholder="GCC Location of your files">
+                        <p class="help is-link" id="storage_files_error">Example: gs://your-bucket/your-files/01.csv</p>
+                    </div>
+                </div>
+                <div class="two fields mobile-view-standard">
+                    <div class="field">
+                        <label class="label">Run Every</label>
+                        <div class="field">
+                            <input type="number" class="input" id="runtime" placeholder="in minutes">
+                            <p class="help is-link" id="runtime_error"></p>
+                        </div>
+                    </div>
+                    <div class="field btn_actions">
+                        <label class="label">Actions</label>
+                        <div class="field">
+                            <button class="button is-link validate">Create</button> 
+                            <button class="button is-link is-light">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/dropdown.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/transition.js"></script>
+<script src="./js/script.js"></script>
+<script>
+    $('.ui.dropdown')
+        .dropdown()
+        ;
+</script>
+
+</html>

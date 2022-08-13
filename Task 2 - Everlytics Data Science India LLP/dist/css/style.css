@@ -1,0 +1,21 @@
+body {
+  background: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  width: 100vw;
+}
+body main {
+  width: 90vw !important;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+body main .container {
+  overflow: auto !important;
+}
+body main .container .table th td {
+  color: #333 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
