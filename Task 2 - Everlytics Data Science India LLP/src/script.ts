@@ -1,5 +1,5 @@
 const request = () => {
-    fetch("https://theresian.nuvie.in/data.json", { method: "get" }).then(response => {return response.json()}).then(data => {
+    fetch("./data.json", { method: "get" }).then(response => {return response.json()}).then(data => {
         if (data.length == 0) {
             console.warn(`[WARN] No Data Found in the JSON File`);
             if (confirm("No data found. Do you want to try again?")) {
